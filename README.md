@@ -1,7 +1,7 @@
 # redis-bench
 A simple single-thread write/read benchmark program for redis in golang.
 
-1. Start a redis
+##  Start a redis
 
 To benchmark in-memory redis.
 ```sh
@@ -14,15 +14,15 @@ To benchmark redis with persistence
 docker run -d -v /tmp/redis:/data -p 6379:6379 redis:alpine redis-server --appendonly yes
 ```
 
-2. Build
+## Build
 ```sh
 go get gopkg.in/redis.v5
-# Mirror of gopkg.in/redis.v5
+# Us mirror of gopkg.in/redis.v5 if go get failed
 # https://github.com/go-redis/redis
 go build
 ```
 
-3. Bench
+## Bench
 ```sh
 time ./redis-bench
 ```
